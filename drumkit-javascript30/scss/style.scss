@@ -1,0 +1,129 @@
+body {
+	display: flex;
+	justify-content: center;
+	background-color: #f2f1ec;
+}
+.key {
+	display: inline-block;
+	transition: all ease-in-out 0.042s;
+	position: absolute;
+	background: #eaeaea;
+	font-size: 1.5em;
+	height: 32px;
+	width: 32px;
+	text-align: center;
+	border-radius: 4px;
+	border: 3px solid #aaa;
+	color: #444;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.65);
+	z-index: 2;
+	
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.crash {
+		left: 33rem;
+		top: 6.5rem;
+}
+
+.ride {
+	left: 40rem;
+	top: 6.5rem;
+}
+
+.kick {
+	left: 45rem;
+	top: 23rem;
+}
+
+.bass {
+	left: 53rem;
+	top: 23rem;
+}
+
+.openhat {
+	left: 57rem;
+	top: 10rem;
+}
+
+.hihat {
+	left: 65rem;
+	top: 10rem;
+}
+
+.snare {
+	left: 59rem;
+	top: 19rem;
+}
+
+.high-tom {
+	left: 53rem;
+	top: 16.5rem;
+}
+
+.mid-tom {
+	left: 45rem;
+	top: 16rem;
+}
+
+.low-tom{
+	left: 38.5rem;
+	top: 23rem;
+}
+
+.playing {
+	border: 1px solid #aaa;
+	transform: scale(1.1);
+}
+
+.drum-set {
+	width: 45rem;
+
+	.drum-kit {
+		width: 100%;
+		height: 35rem;
+		position: relative;
+	}
+
+	#crash {
+		position: absolute;
+		top: 8.2rem;
+		left: 34.2rem;
+		transform: rotate(-7deg) scale(1.5);
+		transition: all ease-in-out .042s;
+	}
+
+	#hihat-top {
+		position: absolute;
+		top: 11.5rem;
+		left: 58.5rem;
+		transform: scale(1.6);
+		transition: all ease-in-out .042s;
+	}
+
+	#drum-stick-left {
+		position: absolute;
+		border: solid;
+		border-radius: 35%;
+		height: 8rem;
+		width: 0rem;
+		left: 48rem;
+		top: 5rem;
+		transform: rotate(20deg);
+		color: #b4b49c;	
+	}
+
+	#drum-stick-right {
+		position: absolute;
+		border: solid;
+		border-radius: 35%;
+		height: 8rem;
+		width: 0rem;
+		left: 53rem;
+		top: 7rem;
+		transform: rotate(-20deg);
+		color: #b4b49c;
+	}
+}
