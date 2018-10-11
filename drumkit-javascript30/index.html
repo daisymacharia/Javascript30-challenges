@@ -4,89 +4,84 @@
 <head>
   <meta charset="UTF-8">
   <title>Drumkit #javascript30</title>
-  
-  
-  
+
+
+
       <link rel="stylesheet" href="css/style.css">
 
-  
+
 </head>
 
 <body>
+  <head>
+      <body>
 
-  <body>
+        	<div data-audio="69" class="key crash">
+        		<kbd>E</kbd>
+        	</div>
+        	<div data-audio="82" class="key ride">
+        		<kbd>R</kbd>
+        	</div>
+        	<div data-audio="85" class="key openhat">
+        		<kbd>U</kbd>
+        	</div>
 
-	<div data-audio="69" class="key crash">
-		<kbd>E</kbd>
-	</div>
-	<div data-audio="82" class="key ride">
-		<kbd>R</kbd>
-	</div>
-	<div data-audio="85" class="key openhat">
-		<kbd>U</kbd>
-	</div>
-	
-	<div data-audio="73" class="key hihat">
-		<kbd>I</kbd>
-	</div>
-	<div data-audio="86" class="key kick" id="kick">
-		<kbd>V</kbd>
-	</div>
-	<div data-audio="66" class="key bass" id="bass">
-		<kbd>B</kbd>
-	</div>
-	
-	<div data-audio="74" class="key snare">
-		<kbd>J</kbd>
-	</div>
-	<div data-audio="71" class="key mid-tom">
-		<kbd>G</kbd>
-	</div>
-	<div data-audio="72" class="key high-tom">
-		<kbd>H</kbd>
-	</div>
-	<div data-audio="68" class="key low-tom">
-		<kbd>D</kbd>
-	</div>
+        	<div data-audio="73" class="key hihat">
+        		<kbd>I</kbd>
+        	</div>
+        	<div data-audio="86" class="key kick" id="kick">
+        		<kbd>V</kbd>
+        	</div>
+        	<div data-audio="66" class="key bass" id="bass">
+        		<kbd>B</kbd>
+        	</div>
 
-	<audio data-audio="69" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793564/sounds/clap_zzxlfj.wav"> 
-	</audio>
-	<audio data-audio="73" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793634/sounds/hihat_epvrsa.wav">
-	</audio>
-	<audio data-audio="86" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793647/sounds/kick_uop9oa.wav">
-	</audio>
-	
-	<audio data-audio="85" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793681/sounds/openhat_wxy6w1.wav">
-	</audio>
-	<audio data-audio="66" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793701/sounds/boom_f5o8rw.wav"> </audio>
-	<audio data-audio="82" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793752/sounds/ride_yxqwmi.wav">
-	</audio>
-	
-	<audio data-audio="74" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793802/sounds/snare_zoc0b6.wav">
-	 </audio>
-	<audio data-audio="72" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537963455/sounds/tom-high.wav">
-	</audio>
-	<audio data-audio="71" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537963455/sounds/tom-mid.wav">
-	</audio>
-	<audio data-audio="68" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537963455/sounds/tom-low.wav">
-	</audio>
-</body>
+        	<div data-audio="74" class="key snare">
+        		<kbd>J</kbd>
+        	</div>
+        	<div data-audio="71" class="key mid-tom">
+        		<kbd>G</kbd>
+        	</div>
+        	<div data-audio="72" class="key high-tom">
+        		<kbd>H</kbd>
+        	</div>
+        	<div data-audio="68" class="key low-tom">
+        		<kbd>D</kbd>
+        	</div>
 
-<div class="drum-set">
-	<img id="hihat-top" src="https://res.cloudinary.com/daisymacharia/image/upload/v1537866761/hihat-top.png" alt="hithat-top" />
-	<img id="crash" src="https://res.cloudinary.com/daisymacharia/image/upload/v1537866759/crash.png" alt="crash" />
-	<img class="drum-kit" src="https://res.cloudinary.com/daisymacharia/image/upload/v1537866761/drum-kit.png" alt="Drum Kit" />
-	<div class="stick" id="drum-stick-left"></div>
-	<div class="stick" id="drum-stick-right"></div>
-</div
-  
-  
+        	<audio data-audio="69" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793564/sounds/clap_zzxlfj.wav">
+        	</audio>
+        	<audio data-audio="73" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793634/sounds/hihat_epvrsa.wav">
+        	</audio>
+        	<audio data-audio="86" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793647/sounds/kick_uop9oa.wav">
+        	</audio>
 
-    <script  src="js/index.js"></script>
+        	<audio data-audio="85" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793681/sounds/openhat_wxy6w1.wav">
+        	</audio>
+        	<audio data-audio="66" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793701/sounds/boom_f5o8rw.wav"> </audio>
+        	<audio data-audio="82" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793752/sounds/ride_yxqwmi.wav">
+        	</audio>
+
+        	<audio data-audio="74" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537793802/sounds/snare_zoc0b6.wav">
+        	 </audio>
+        	<audio data-audio="72" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537963455/sounds/tom-high.wav">
+        	</audio>
+        	<audio data-audio="71" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537963455/sounds/tom-mid.wav">
+        	</audio>
+        	<audio data-audio="68" src="https://res.cloudinary.com/daisymacharia/video/upload/v1537963455/sounds/tom-low.wav">
+        	</audio>
 
 
-
-
+        <div class="drum-set">
+        	<img id="hihat-top" src="https://res.cloudinary.com/daisymacharia/image/upload/v1537866761/hihat-top.png" alt="hithat-top" />
+        	<img id="crash" src="https://res.cloudinary.com/daisymacharia/image/upload/v1537866759/crash.png" alt="crash" />
+        	<img class="drum-kit" src="https://res.cloudinary.com/daisymacharia/image/upload/v1537866761/drum-kit.png" alt="Drum Kit" />
+        	<div class="stick" id="drum-stick-left"></div>
+        	<div class="stick" id="drum-stick-right"></div>
+        </div
+  </body>
+</head>
+<script  src="js/index.js"></script>
 </body>
 
 </html>

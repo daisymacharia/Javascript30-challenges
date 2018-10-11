@@ -13,48 +13,47 @@ function animateHiHatClosed() {
 
 function playCrash(e) {
 	leftStick.style.top = "1.5rem";
-	leftStick.style.left = "37rem";
+	leftStick.style.left = "31rem";
 }
 
 function playRide() {
 	leftStick.style.top = "1.5rem";
-	leftStick.style.left = "43rem";
+	leftStick.style.left = "38rem";
 }
 
 function playLowTom() {
 	leftStick.style.top = "12.3rem";
-	leftStick.style.left = "40rem";
+	leftStick.style.left = "36rem";
 }
 
 function playMidTom() {
 	leftStick.style.top = "5.8rem";
-	leftStick.style.left = "48rem";
+	leftStick.style.left = "43rem";
 }
 
 function playHihatOpen() {
 	rightStick.style.top = "5rem";
-	rightStick.style.left = "57rem";
+	rightStick.style.left = "52rem";
 }
 
 function playHihatClosed() {
 	rightStick.style.top = "5rem";
-	rightStick.style.left = "64rem";
+	rightStick.style.left = "59rem";
 }
 
 function playSnare() {
 	rightStick.style.top = "10rem";
-	rightStick.style.left = "57rem";
+	rightStick.style.left = "52rem";
 }
 
 function playing(e) {
 	var keyCode = e.keyCode;
-	var audio = document.querySelector("audio[data-audio=\"" + keyCode + "\"]");
-	var key = document.querySelector(".key[data-audio=\"" + keyCode + "\"]");
+	var audio = document.querySelector('audio[data-audio="' + keyCode + '"]');
+	var key = document.querySelector('.key[data-audio="' + keyCode + '"]');
 	if (!audio) return;
 
 	audio.currentTime = 0; //rewind to the start
 	audio.play();
-
 
 	switch (keyCode) {
 		case 69:
@@ -80,14 +79,13 @@ function playing(e) {
 			break;
 		case 74:
 			playSnare();
-			break;}
-
+			break;
+	}
 
 	key.classList.add("playing");
 }
 
 function removestickTransition(e) {
-	console.log(e);
 	e.style.visibility = "none";
 }
 
@@ -107,7 +105,9 @@ function removeCrashOrRideTransition(e) {
 }
 
 var keys = document.querySelectorAll(".key");
-keys.forEach(function (key) {return key.addEventListener("transitionend", removeTransition);});
+keys.forEach(function(key) {
+	return key.addEventListener("transitionend", removeTransition);
+});
 
 crashRide.addEventListener("transitionend", removeCrashOrRideTransition);
 
@@ -115,9 +115,8 @@ hiHatTop.addEventListener("transitionend", removeHiHatTransition);
 
 var sticks = document.querySelectorAll(".stick");
 
-// keys.forEach(key => key.addEventListener("transitionend", removestickTransition));
-
-sticks.forEach(function (stick) {return stick.addEventListener("transitionend", removestickTransition);});
-// leftStick.addEventListener("transitionend", removeLeftstickTransition);
+sticks.forEach(function(stick) {
+	return stick.addEventListener("transitionend", removestickTransition);
+});
 
 window.addEventListener("keydown", playing);
