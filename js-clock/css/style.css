@@ -1,0 +1,72 @@
+.clock {
+  width: 100%;
+  height: 100%;
+}
+.clock .clock-face {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border: 0.5rem solid #c3c2b9;
+  transform: translate(35rem, 5rem);
+  box-shadow: 0.2rem 0.3rem 1rem 0 rgba(0, 0, 0, 0.5);
+}
+.clock .graduation {
+  position: absolute;
+  background-color: #c3c2b9;
+}
+.clock .left-graduation {
+  width: 0.5rem;
+  height: 0.1rem;
+  top: 50%;
+}
+.clock .top-graduation {
+  height: 0.5rem;
+  width: 0.1rem;
+  left: 50%;
+}
+.clock .right-graduation {
+  width: 0.5rem;
+  height: 0.1rem;
+  top: 50%;
+  left: 97%;
+}
+.clock .bottom-graduation {
+  height: 0.5rem;
+  width: 0.1rem;
+  top: 97%;
+  left: 50%;
+}
+.clock .pin {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #c5c272;
+  transform: translate(6.5rem, 7rem);
+}
+.clock .hand {
+  position: absolute;
+  background-color: #7f7d63;
+  width: 50%;
+  height: 0.5rem;
+  top: 50%;
+  transform: rotate(90deg);
+  transform-origin: 100%;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 0.9, 0.58, 1);
+  border-radius: 3rem 2.5rem / 1rem 2rem;
+}
+.clock .hour-hand {
+  width: 5rem;
+  left: 2.5rem;
+}
+.clock .minute-hand {
+  width: 7rem;
+  left: 0.5rem;
+}
+.clock .second-hand {
+  top: 50%;
+  transform: translate(1rem);
+  background-color: #c5c272;
+}
